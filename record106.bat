@@ -1,5 +1,7 @@
 @echo off
 
+REM This version of the batch is for WolfMAME 0.106
+
 REM Get system time
 REM Format will be YYYYMMDDTHMMSS00
 For /f "tokens=1-4 delims=/ " %%a in ('date /t') do (set mydate=%%d%%b%%c)
@@ -7,10 +9,10 @@ For /f "tokens=1-4 delims=/:/./ " %%a in ("%time: =0%") do (set mytime=%%a%%b%%c
 
 REM Run WolfMAME
 REM This disables NVRAM, runs in a window, disables bilinear filter, runs with no auto-frameskip at frameskip 0, and disables cheats
-REM %2 - %9 are for any other options you want to use when running WolfMAME
+REM %2 - %9 are for any other options you want to use from the command line when running WolfMAME, for example: record milliped -mouse
 mamep106-vc %1 -rec %1 -nvram_directory NUL -w -noflt -noafs -fs 0 -noc %2 %3 %4 %5 %6 %7 %8 %9
 
-REM Zip the INP
+REM Zip the INP and WLF files
 REM Archive will be named based on romset short name, WolfMAME version, and the system time at the start of recording
 REM 7-Zip executable must be present in MAME root folder
 REM This assumes default INP locations in inp folder
