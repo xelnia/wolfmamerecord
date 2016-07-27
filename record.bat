@@ -1,7 +1,7 @@
 @echo off
 
 REM Get system time
-REM Format will be YYYYMMDDTHMMSS00
+REM Format will be YYYYMMDDTHHMMSS00
 for /f "tokens=1-4 delims=/ " %%a in ('date /t') do (set mydate=%%d%%b%%c)
 for /f "tokens=1-4 delims=/:/./ " %%a in ("%time: =0%") do (set mytime=%%a%%b%%c%%d)
 
