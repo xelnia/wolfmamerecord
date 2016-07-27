@@ -12,7 +12,7 @@ mamearcade %1 -rec %1.inp -nvram_directory NUL -w -nofilter -noafs -fs 0 -noc %2
 
 REM Zip the INP
 REM Archive will be named based on romset short name, WolfMAME version, and the system time at the start of recording
-REM 7-Zip executable must be present in MAME root folder
+REM 7-Zip executable must be present in WolfMAME root folder
 REM This assumes default INP locations in inp folder
 REM () is a placeholder for score
 REM WolfMAME version ("wolf176") will need to be updated if used for different versions
