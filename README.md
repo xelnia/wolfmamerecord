@@ -1,5 +1,5 @@
 # wolfmamerecord
-Batch file to record and zip INPs with WolfMAME and Z-Zip
+Windows batch file to record and zip INPs with WolfMAME and Z-Zip
 
 To use, place this batch file in the same folder as the WolfMAME executable. You will also need the 7-Zip executable in the same folder: http://www.7-zip.org/download.html
 
